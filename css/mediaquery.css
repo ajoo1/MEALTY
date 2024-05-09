@@ -1,0 +1,36 @@
+@media screen and (max-width:900px) and (min-width:700px){
+    .marawn_home_talk h2
+    {
+        width: 400px;
+
+    }
+    .marawn_home_talk p
+    {
+        width:400px;
+}
+#homeimg
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+
+}
+.marawn_home_ing
+{
+    padding-top: 50px;
+    height: 600px;
+}
+.marawn_home_talk
+{
+    top: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.menubtn{
+    position: absolute;
+    left: -800px;
+}
+}

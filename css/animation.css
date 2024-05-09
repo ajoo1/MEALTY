@@ -1,0 +1,101 @@
+/*nav */
+
+/*home*/
+.triangle a:hover
+{
+ color: var(--maincolor);
+}
+.triangle:hover::before
+{
+    border-left: 100px solid red;
+
+}
+.marawn_home_btns button:hover
+{
+    background-color: red;
+}
+@keyframes maindish
+{
+    0%
+    {
+        transform: scale(1) rotate(2deg);
+        left: 0px;
+        top: 0;
+    }
+    50%
+    {
+        transform: scale(1.01) rotate(2deg);
+        left: 2px;
+        top : 2px;
+
+    }
+    70%
+    {
+        transform: scale(1.02) rotate(-2deg);
+        left: -2px;
+        top : -2px;
+
+
+    }
+    100%
+    {
+        transform: scale(1) rotate(1deg);
+        left: 0px;
+        top: 0;
+
+
+    }
+
+}
+
+.marawn_home_ing img:hover
+{
+    animation: maindish 0.7s;
+    animation-iteration-count: infinite;
+}
+.menubtn:focus ~ .menu_items
+{
+    left: -150px;
+}
+.nav_menu button:hover
+{
+    color: red;
+
+}
+.pizza1:hover .slide2
+{
+top: 0px;
+}
+.pizza2:hover .slide2
+{
+top: 0px;
+}
+
+.navlinks a:hover:after
+{
+    content: "";
+    display: block;
+    height: 1px;
+    padding: 0px;
+    background-color: var(--maincolor);
+    animation-name: btneff;
+    animation-duration: 0.3s;
+
+}
+@keyframes btneff
+{
+    from
+    {
+        width: 0px;
+    }
+    to
+    {
+        width: 100%;
+    
+    }
+}
+
+/* chefs */
+/* gall */
+/* contact */
+/*  footer */

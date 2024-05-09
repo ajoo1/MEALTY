@@ -1,0 +1,136 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+/* variables */
+:root {
+  /* ? ######## Colors */
+  --color-default: #212529;
+  --primary-hue: 0;
+  --primary-saturation: 84%;
+  --primary-lightness: 44%;
+  --color-primary: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
+  --color-secondary: #37373f;
+  --color-tertiary: #7f7f90;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 100%;
+  --color-light: hsl(
+    var(--light-hue),
+    var(--light-saturation),
+    var(--light-lightness)
+  );
+  --color-light-grey: #eee;
+  /* ? ######## Fonts */
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  /* ? ######## Animation options */
+  --animation-duration: 400ms;
+}
+#E-chefs {
+  padding: 5rem 0;
+}
+.main-title h2 {
+  color: var(--color-tertiary);
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.main-title {
+  text-align: center;
+}
+.main-title p {
+  font-size: 3.125rem;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-title span {
+  color: var(--color-primary);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
+.chefs-cards {
+  --gap: 1.875rem;
+  padding-block: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.chefs-cards .card {
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  background-color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: scale var(--animation-duration);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.chefs-cards .card:hover {
+  scale: 1.07;
+}
+.chefs-cards .card picture {
+  width: 100%;
+  position: relative;
+}
+.chefs-cards img {
+  width: 100%;
+}
+.chefs-cards .card-content {
+  padding: 1.5625rem;
+  padding-top: 0.625rem;
+}
+.chefs-cards .card span {
+  font-size: 0.875rem;
+  color: var(--color-body);
+  margin-block: 0.3125rem 0.625rem;
+}
+.chefs-cards .card p {
+  font-size: ;
+  font-style: italic;
+  color: var(--color-body);
+}
+
+.chefs-cards .social-box {
+  background-color: #ffffff4d;
+  width: fit-content;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 1.875rem;
+  right: -3.125rem;
+  transition: right calc(var(--animation-duration) / 2);
+}
+
+.chefs-cards .card:hover .social-box {
+  right: 0.625rem;
+  transition: right var(--animation-duration) var(--animation-duration);
+}
+
+.chefs-cards .social-box i {
+  font-size: 1.125rem;
+  padding: 0.625rem 0.3125rem;
+  color: #37373f66;
+  transition: color var(--animation-duration);
+}
+
+.chefs-cards .social-box i:hover {
+  color: #37373fe6;
+}
+.card li {
+  list-style: none;
+}
