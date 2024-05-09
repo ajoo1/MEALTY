@@ -39,6 +39,9 @@ toggle.addEventListener('click', function(){
         card.style.background='white';
         card1.style.background='white';
         card2.style.background='white';
+        card.style.color='black';
+        card1.style.color='black';
+        card2.style.color='black';
         eslam_h2.style.color='#ce1212';
         subs.style.background='#ce1212';
         icon.style.color='#ce1212';
